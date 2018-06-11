@@ -1,0 +1,57 @@
+#title-view {
+  padding-left: 20px;
+}
+
+#tree-view {
+  width: 100%;
+  overflow: auto;
+}
+
+.node--expanded,
+.node--collapsed {
+  cursor: pointer;
+}
+
+.node text.node-name {
+  fill: black;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.node text.node-value {
+  fill: rgb(30, 147, 198);
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.node--expanded text.node-value {
+  display: none;
+}
+
+.node--collapsed text.node-value:hover {
+  text-decoration: underline;
+}
+
+.node circle {
+  fill: #ffffff;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.node--expanded circle {
+  fill: #aaaaaa;
+}
+
+.node--collapsed circle {
+  fill: white;
+}
+
+.node--leaf circle {
+  stroke: white;
+  fill: #666666;
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-opacity: 0.4;
+  stroke-width: 1.2px;
+}
